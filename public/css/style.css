@@ -1,0 +1,359 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background: #ffffff;
+    color: #111;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    border-bottom: 1px solid #eee;
+    background: #fff;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 22px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.nav-left a,
+.nav-right a {
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #000;
+    margin-right: 25px;
+}
+
+.nav-left a:hover,
+.nav-right a:hover {
+    opacity: 0.6;
+}
+
+.nav-link-btn {
+    background: none;
+    border: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: #000;
+}
+
+.nav-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+    max-width: 1200px;
+    margin: 70px auto;
+    padding: 0 20px;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    letter-spacing: 8px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 14px;
+    color: #666;
+    letter-spacing: 1px;
+}
+
+
+/* =========================
+   PRODUCT GRID
+========================= */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 40px;
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card {
+    border: none;
+    padding: 0;
+}
+
+.card img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    margin-bottom: 14px;
+}
+
+.card h3 {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.harga {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.empty {
+    text-align: center;
+    color: #999;
+    margin-top: 80px;
+    font-size: 14px;
+}
+
+
+/* =========================
+   BUTTON (Minimal)
+========================= */
+
+.btn {
+    display: inline-block;
+    padding: 14px 32px;
+    border: 1px solid #000;
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.btn:hover {
+    background: #000;
+    color: #fff;
+}
+
+
+/* =========================
+   AUTH PAGES
+========================= */
+
+.auth-wrapper {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-box {
+    width: 100%;
+    max-width: 420px;
+    border: 1px solid #eee;
+    padding: 50px 40px;
+    background: #fff;
+}
+
+.auth-title {
+    text-align: center;
+    font-size: 26px;
+    letter-spacing: 4px;
+    margin-bottom: 12px;
+}
+
+.auth-subtitle {
+    text-align: center;
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 35px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #000;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 14px;
+    background: #000;
+    color: #fff;
+    border: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+
+/* =========================
+   FORM ELEMENTS
+========================= */
+
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #000;
+}
+
+input[type="file"] {
+    border: none;
+    padding: 5px 0;
+    font-size: 13px;
+}
+
+
+/* =========================
+   PRODUCT DETAIL PAGE
+========================= */
+
+.product-detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    margin-top: 40px;
+}
+
+.product-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.product-info h1 {
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.detail-price {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.detail-description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+.detail-store span {
+    font-size: 12px;
+    color: #777;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.detail-store a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+}
+
+.detail-store a:hover {
+    opacity: 0.6;
+}
+
+
+/* =========================
+   STORE PAGE
+========================= */
+
+.store-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.store-header h1 {
+    font-size: 36px;
+    letter-spacing: 6px;
+    margin-bottom: 15px;
+}
+
+.store-header p {
+    font-size: 14px;
+    color: #666;
+}
+
+.open-store-btn {
+    border: 1px solid #000;
+    padding: 8px 18px;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.open-store-btn:hover {
+    background: #000;
+    color: #fff;
+}
